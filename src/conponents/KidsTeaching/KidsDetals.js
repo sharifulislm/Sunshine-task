@@ -3,7 +3,7 @@ import img from'../image/about.png';
 
 const KidsDetals = () => {
     return (
-        <div id='Courses' className='container'>
+        <div id='Courses' className='container mb-5'>
         <div className='contents-box text-center mt-6'>
          <h2 className='hadding  mt-5'> About Our KidsAcademy</h2>
         <div className='border-hadding'></div>

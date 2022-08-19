@@ -24,7 +24,7 @@ const KidsTeaching = (Props) => {
  
 
     return (
-        <div className='col-12 col-md-6 col-lg-4 card-box'>
+        <div className='col-12 col-md-6 col-lg-4 mb-6 card-box'>
 <div >
     <img className='w-100' src={picture} alt="" />
 </div>
@@ -36,7 +36,7 @@ const KidsTeaching = (Props) => {
 </div>
 <div className='d-flex justify-content-between'>
 
-<button onClick={HandleNavigate} className='btn-chacout-discover'> DISCOVER MORE <AiFillCaretRight></AiFillCaretRight> </button>
+<button onClick={HandleNavigate} className='btn-chacout-discover mb-5'> DISCOVER MORE <AiFillCaretRight></AiFillCaretRight> </button>
 {/* <button onClick={} className='btn-chacout-discover'> Private Course <AiFillCaretRight></AiFillCaretRight> </button> */}
 
 

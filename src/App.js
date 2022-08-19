@@ -16,7 +16,8 @@ import ServiceDatials from './conponents/ServiceDatials/ServiceDatials';
 import CheckOut from './conponents/CheckOut/CheckOut';
 import KidsService from './conponents/KidsService/KidsService';
 import KidsDetals from './conponents/KidsTeaching/KidsDetals';
-import Profile from './conponents/Profile/Profile';
+import Footerend from './conponents/Footer/Footerend';
+
 
 
 
@@ -42,7 +43,7 @@ function App() {
   <Route path='KidsDetals'element={<RequireAuth> <KidsDetals></KidsDetals></RequireAuth>}></Route>
 
  
-  <Route path='about' element={<Profile></Profile>} ></Route>
+
   <Route path='Login' element={<Login></Login>} ></Route>
   <Route path='KidsDetals' element={<KidsDetals></KidsDetals>} ></Route>
   <Route path='Signup' element={<Signup></Signup>} ></Route>
@@ -60,6 +61,7 @@ function App() {
 
     
 <Footer></Footer>
+<Footerend></Footerend>
 
 
     </div>
