@@ -64,7 +64,7 @@ const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
       
 
     return (
-        <Card className='m-auto mt-5 p-2 from-secton ' style={{ width: '20rem' }}>
+        <Card className='m-auto mt-5 p-2 from-secton mb-4 ' style={{ width: '20rem' }}>
             <p className='text-center'>Sign in with your existing account</p>
             <div>
                 <form onSubmit={HandelLoginSubmit} action="">
@@ -91,7 +91,7 @@ const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
            <Form.Control onBlur={HendelPassword} type="Password" placeholder="Password" />
             <br/>
 
-           <Button onClick={HandelLoginSubmit} variant="primary">Primary</Button>
+           <Button onClick={HandelLoginSubmit} variant="primary">Login</Button>
            <ToastContainer />
            <p className='text-center mt-2'>OR</p>
            <p text-dengar>{HendelError}</p>

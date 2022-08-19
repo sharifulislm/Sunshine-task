@@ -67,7 +67,7 @@ const HandleSubmit =event => {
 
 
     return (
-      <div className='m-auto mt-5 p-2 from-secton ' style={{ width: '20rem' }}>
+      <div className='m-auto mt-5 p-2 from-secton mb-4' style={{ width: '20rem' }}>
             <h5 className='text-center'>Create a New account</h5>
         <p className='text-center'>Please provide the following details.</p>
         <div>
@@ -83,7 +83,7 @@ const HandleSubmit =event => {
         <label for="lname">Confirm New Password </label> <br/>
        {/* <input onBlur={HandelConfirmPassword} className='ps-2 pt-1 pb-1' type="Password" placeholder='Confirm New Password' id='Password' /> <br/> */}
        <Form.Control onBlur={HandelConfirmPassword} type="Password" placeholder='Confirm New Password' />
-       <Button onClick={HandleSubmit} variant="primary">Primary</Button>
+       <Button onClick={HandleSubmit} variant="primary">Register</Button>
         
            <p className='text-center mt-2'>OR</p>
        <SocalIcon></SocalIcon>
