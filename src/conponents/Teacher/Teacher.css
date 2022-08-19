@@ -1,0 +1,12 @@
+button.teacher {
+    border: none;
+    background: #FF7F50;
+    color: white;
+    padding: 5px 31px;
+    border-radius: 15px;
+}
+img.w-75.teacher-img {
+    margin: auto;
+    border-radius: 10px;
+    margin-left: 17px;
+}

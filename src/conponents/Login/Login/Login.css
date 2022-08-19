@@ -1,0 +1,14 @@
+
+.from-secton {
+    border: 1 solid red;
+ 
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    background-color: #fff;
+}
+
+.forgot-password {
+    color: #0399D5;
+    font-size: 15px;
+    font-weight: 900;
+}
+

@@ -1,0 +1,10 @@
+nav.navbar-box.navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top {
+    background-color: #92278F !important;
+    padding: 13px;
+}
+div#responsive-navbar-nav a {
+    color: currentcolor;
+    font-size: 20px;
+    font-weight: 500;
+}
+

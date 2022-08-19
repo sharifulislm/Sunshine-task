@@ -1,0 +1,24 @@
+.Home-page {
+background-image: url('../image/propaty.jpg');
+
+background-repeat: no-repeat;
+background-size:cover;
+padding: 250px 0px;
+
+}
+nav.navbar-box.navbar.navbar-expand-lg.navbar-dark.bg-light.sticky-top {
+    background-color: #051c5980 !important;
+    color: white !important;
+}
+.content-pera {
+    text-align: center;
+    background: #4475ce94;
+    width: 487px;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-weight: 900;
+    font-family: fangsong;
+    padding: 6px;
+    border-radius: 25px;
+}

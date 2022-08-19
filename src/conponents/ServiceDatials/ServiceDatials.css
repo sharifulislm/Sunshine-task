@@ -1,0 +1,14 @@
+.Details{
+    background-image: url("../image/images.jfif") !important;
+background-repeat: no-repeat;
+background-size:cover;
+padding-bottom: 400px;
+}
+.Details-box.m-auto {
+    text-align: center;
+    padding: 110px 32px;
+}
+button.btn.btn-primary {
+    padding: 6px 117px;
+    margin-top: 15px;
+}
