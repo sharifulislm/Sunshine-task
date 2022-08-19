@@ -5,6 +5,7 @@ import '../Login/Login.css';
 import auth from '../../firebase.init';
 import SocalIcon from './SocalIcon';
 import Loading from '../../Loading/Loading';
+import { Button, Card, Form, ToastContainer } from 'react-bootstrap';
 
 
 
@@ -70,14 +71,19 @@ const HandleSubmit =event => {
         <div>
             <form onSubmit={HandleSubmit} action="">
 
-        <label for="fname">Email Address</label> <br/>
-        <input onBlur={Handelemail} className='ps-2 pt-1 pb-1' type="text" name="" id="" placeholder='Email'/> <br/>
+   
+        <Form.Label>Email address</Form.Label>
+
+        <Form.Control onBlur={Handelemail} type="text" placeholder="Email" />
         <label for="lname">New Password </label> <br/>
-       <input onBlur={HendelPassword} className='ps-2 pt-1 pb-1' type="Password" placeholder='New Password' id='Password' /> <br/>
+       {/* <input onBlur={HendelPassword} className='ps-2 pt-1 pb-1' type="Password"  id='Password' /> <br/> */}
+       <Form.Control onBlur={HendelPassword} type="Password" placeholder='New Password' />
         <label for="lname">Confirm New Password </label> <br/>
-       <input onBlur={HandelConfirmPassword} className='ps-2 pt-1 pb-1' type="Password" placeholder='Confirm New Password' id='Password' /> <br/>
-       <button className='login mt-3 '>SIGNUP</button>
-       <small className='OR text-center'>OR</small>
+       {/* <input onBlur={HandelConfirmPassword} className='ps-2 pt-1 pb-1' type="Password" placeholder='Confirm New Password' id='Password' /> <br/> */}
+       <Form.Control onBlur={HandelConfirmPassword} type="Password" placeholder='Confirm New Password' />
+       <Button variant="primary">Primary</Button>
+           <ToastContainer />
+           <p className='text-center mt-2'>OR</p>
        <SocalIcon></SocalIcon>
        <p className='text-danger'>   {HendelError}</p>
        <p>Already have an account? <Link to="/Login">Login</Link> </p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { FcGoogle } from "react-icons/fc";
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -32,9 +33,10 @@ let from = location.state?.from?.pathname || "/";
 
 
     return (
-        <div>
+        <div className='text-center m-auto'>
            
-            <button onClick={() => signInWithGoogle()} className='text-center icon-btn'><FcGoogle></FcGoogle> Google Sign in</button>
+            {/* <button onClick={() => signInWithGoogle()} className='text-center icon-btn'><FcGoogle></FcGoogle> Google Sign in</button> */}
+            <Button className='text-center' onClick={() => signInWithGoogle()} variant="secondary"><FcGoogle></FcGoogle> Google Sign in</Button>
         </div>
     );
 };
