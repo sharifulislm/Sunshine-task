@@ -1,6 +1,7 @@
 
 .from-secton {
     border: 1 solid red;
+    border-radius: 12px !important;
  
     box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
     background-color: #fff;

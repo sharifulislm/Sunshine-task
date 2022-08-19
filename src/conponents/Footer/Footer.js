@@ -3,9 +3,12 @@ import { FaFacebook } from "react-icons/fa";
 import {AiFillGooglePlusCircle} from "react-icons/ai";
 import {AiFillTwitterCircle} from "react-icons/ai";
 import './Footer.css';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init';
 
 
 const Footer = () => {
+    const [user]= useAuthState(auth);
     return (
         <div className='container mb-5 mt-5'>
             <div className='aline-border'></div>
@@ -17,6 +20,7 @@ const Footer = () => {
                <FaFacebook></FaFacebook>
                <AiFillGooglePlusCircle></AiFillGooglePlusCircle>
                <AiFillTwitterCircle></AiFillTwitterCircle>
+               <p>your email {user?.email}</p>
 
 
 

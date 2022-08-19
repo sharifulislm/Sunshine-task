@@ -3,7 +3,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../../Loading/Loading';
-// import './Login.css';
+import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -71,7 +71,7 @@ const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
            
             <Form.Label>Email address</Form.Label>
            
-            {/* <input onBlur={Handelemail} className='ps-2 pt-1 pb-1' type="text" name="" id="" placeholder='Email'/> */}
+
             <Form.Control onBlur={Handelemail} type="text" placeholder="Email" />
              <br/>
             <label for="lname">Password   <span className='forgot-password ps-1 mt-2 mb-2 m-0 p-0'>
@@ -87,11 +87,11 @@ const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
            }} className='text-primary forgot-password'> Forgot your password?</Form.Label>
            
            </span></label> <br/>
-           {/* <input onBlur={HendelPassword} className='ps-2 pt-1 pb-1' type="Password" placeholder='Password' id='Password' /> */}
+
            <Form.Control onBlur={HendelPassword} type="Password" placeholder="Password" />
             <br/>
-           {/* <button className='login mt-3 '>SIGIN IN</button> */}
-           <Button variant="primary">Primary</Button>
+
+           <Button onClick={HandelLoginSubmit} variant="primary">Primary</Button>
            <ToastContainer />
            <p className='text-center mt-2'>OR</p>
            <p text-dengar>{HendelError}</p>

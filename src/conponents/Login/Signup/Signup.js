@@ -5,7 +5,7 @@ import '../Login/Login.css';
 import auth from '../../firebase.init';
 import SocalIcon from './SocalIcon';
 import Loading from '../../Loading/Loading';
-import { Button, Card, Form, ToastContainer } from 'react-bootstrap';
+import { Button, Form,} from 'react-bootstrap';
 
 
 
@@ -14,6 +14,7 @@ const Signup = () => {
   
 const [email,setEmail]=useState('');
 const [password,setPassword]=useState('');
+
 const [confirmpass,setConfirmpass]=useState('');
 
 let HendelError;
@@ -60,12 +61,13 @@ const HandelConfirmPassword = event => {
 const HandleSubmit =event => {
     event.preventDefault();
     createUserWithEmailAndPassword(email, password)
+    console.log(email,password);
 }
 
 
 
     return (
-      <Card className='m-auto mt-5 p-2 from-secton ' style={{ width: '20rem' }}>
+      <div className='m-auto mt-5 p-2 from-secton ' style={{ width: '20rem' }}>
             <h5 className='text-center'>Create a New account</h5>
         <p className='text-center'>Please provide the following details.</p>
         <div>
@@ -81,8 +83,8 @@ const HandleSubmit =event => {
         <label for="lname">Confirm New Password </label> <br/>
        {/* <input onBlur={HandelConfirmPassword} className='ps-2 pt-1 pb-1' type="Password" placeholder='Confirm New Password' id='Password' /> <br/> */}
        <Form.Control onBlur={HandelConfirmPassword} type="Password" placeholder='Confirm New Password' />
-       <Button variant="primary">Primary</Button>
-           <ToastContainer />
+       <Button onClick={HandleSubmit} variant="primary">Primary</Button>
+        
            <p className='text-center mt-2'>OR</p>
        <SocalIcon></SocalIcon>
        <p className='text-danger'>   {HendelError}</p>
@@ -91,7 +93,7 @@ const HandleSubmit =event => {
              
         </div>
         
-    </Card>
+    </div>
     );
 };
 

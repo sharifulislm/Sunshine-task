@@ -16,7 +16,6 @@ import ServiceDatials from './conponents/ServiceDatials/ServiceDatials';
 import CheckOut from './conponents/CheckOut/CheckOut';
 import KidsService from './conponents/KidsService/KidsService';
 import KidsDetals from './conponents/KidsTeaching/KidsDetals';
-import Blog from './conponents/Blog/Blog';
 import Profile from './conponents/Profile/Profile';
 
 
@@ -34,7 +33,7 @@ function App() {
   <Header></Header>
 
       <Routes>
-  <Route path='/' element={<HomePage></HomePage>}></Route>
+  <Route path='/' element={<RequireAuth><HomePage></HomePage></RequireAuth>}></Route>
   <Route path='Courses/:CoursesId' element={<ServiceDatials></ServiceDatials>}></Route>
   <Route path='HomePage' element={<HomePage></HomePage>}></Route>
   <Route path='Courses' element={<Courses></Courses>} ></Route>
@@ -45,7 +44,6 @@ function App() {
  
   <Route path='about' element={<Profile></Profile>} ></Route>
   <Route path='Login' element={<Login></Login>} ></Route>
-  <Route path='Blog' element={<Blog></Blog>} ></Route>
   <Route path='KidsDetals' element={<KidsDetals></KidsDetals>} ></Route>
   <Route path='Signup' element={<Signup></Signup>} ></Route>
   <Route path='CheckOut' element={  <CheckOut></CheckOut>} ></Route>
