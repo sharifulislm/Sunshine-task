@@ -15,6 +15,7 @@ let from = location.state?.from?.pathname || "/";
 
 
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    console.log(error);
     if (error ) {
         HendelError = <div>
             <p>Error:{error?.message}</p>
