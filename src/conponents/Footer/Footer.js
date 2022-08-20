@@ -18,9 +18,9 @@ const Footer = () => {
             <div className='d-flex row justify-content-between mt-5 mt-5 align-items-center'>
              <div className='pera text-white col-12 col-lg-3 col-md-3'>
 
-<Link to="/KidsService"> Active </Link> <br></br>
-<Link to="/Courses"> Courses </Link><br></br>
-<Link to="/"> Home </Link>
+<Link className='text-white' to="/KidsService"> Active </Link> <br></br>
+<Link className='text-white' to="/Courses"> Courses </Link><br></br>
+<Link className='text-white' to="/"> Home </Link>
              </div>
              <div className='pera text-white col-12 col-lg-3 col-md-3  mt-5'>
              
@@ -34,7 +34,7 @@ const Footer = () => {
 
              </div>
 
-             <div className='socal-icon  col-12 col-lg-4 col-md-3'>
+             <div className='socal-icon text-white col-12 col-lg-4 col-md-3'>
                <FaFacebook></FaFacebook>
                <AiFillGooglePlusCircle></AiFillGooglePlusCircle>
                <AiFillTwitterCircle></AiFillTwitterCircle>
@@ -43,7 +43,7 @@ const Footer = () => {
           {
             user ?  <p>your are currently subscribed as {user?.email}</p> :
             
-            <Link to="/Signup"> <AiOutlineLogin></AiOutlineLogin></Link>
+            <Link className='text-white' to="/Signup"> <AiOutlineLogin></AiOutlineLogin></Link>
           }
             
 

@@ -11,17 +11,12 @@ const SocalIcon = () => {
     const navigate = useNavigate()
 const location = useLocation();
 let from = location.state?.from?.pathname || "/";
-    let HendelError;
+ 
 
 
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     console.log(error);
-    if (error ) {
-        HendelError = <div>
-            <p>Error:{error?.message}</p>
-          </div>
-        
-      }
+  
       if (loading) {
         return( <Loading></Loading>)
        
@@ -37,7 +32,7 @@ let from = location.state?.from?.pathname || "/";
         <div className='text-center m-auto'>
            
             {/* <button onClick={() => signInWithGoogle()} className='text-center icon-btn'><FcGoogle></FcGoogle> Google Sign in</button> */}
-            <Button className='text-center' onClick={() => signInWithGoogle()} variant="secondary"><FcGoogle></FcGoogle> Google Sign in</Button>
+            <Button onClick={() => signInWithGoogle()} variant="secondary"><FcGoogle></FcGoogle> Google Sign in</Button>
         </div>
     );
 };

@@ -6,12 +6,13 @@ import {getAuth} from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBrkbFyIpsWc2zBq4xgH1Rtq24jTgj8dGk",
-  authDomain: "teacheracademy-20bb9.firebaseapp.com",
-  projectId: "teacheracademy-20bb9",
-  storageBucket: "teacheracademy-20bb9.appspot.com",
-  messagingSenderId: "1085650277533",
-  appId: "1:1085650277533:web:c414c28969eaa7f5157074"
+  apiKey: "AIzaSyCvLLY7rksyRX_JcTt3UiFHuaumK_TEfNE",
+  authDomain: "sunshine-task-98dfb.firebaseapp.com",
+  projectId: "sunshine-task-98dfb",
+  storageBucket: "sunshine-task-98dfb.appspot.com",
+  messagingSenderId: "38009872111",
+  appId: "1:38009872111:web:59ee5376fab6be2af6051a",
+  measurementId: "G-YMTH05R1FG"
 };
 
 // Initialize Firebase
